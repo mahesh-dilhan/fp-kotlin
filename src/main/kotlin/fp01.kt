@@ -38,3 +38,15 @@ fun countPairs(elements: List<String>) : List<Pair<String, Int>> {
         it
     }.map {  Pair(it.key, it.value.count()) }
 }
+
+open class Results()
+class Success(output: Int): Results()
+class Failure(message: String): Results()
+
+fun divide(x:Int, y:Int) : Results {
+    return if(y==0){
+        Failure("y is equals $y")
+    } else {
+        Success(x/y)
+    }
+}
