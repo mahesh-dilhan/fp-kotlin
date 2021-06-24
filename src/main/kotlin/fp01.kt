@@ -6,6 +6,8 @@ fun main(){
 
 
 
-class fp01 {
-
+fun countPairs(elements: List<String>) : List<Pair<String, Int>> {
+    return elements.groupBy {
+        it
+    }.map {  Pair(it.key, it.value.count()) }
 }
