@@ -10,8 +10,11 @@ fun main(){
     numbers.filter { it % 5==0 }.map { it *20 }.forEach{println(it)}
 
     "kotling functional programming".toCamalCase()
+
+    "Me" isSameAsMe "Me"
 }
 
+infix fun String.isSameAsMe (value: String) = this == value
 
 fun higerOderfn(λ : (Int, Int) -> Int){
     TODO("implemnted ")
