@@ -4,10 +4,11 @@ fun main(){
     print("welcome to functional fp")
     higerOderfn(::sum(1,2))
     higerOderfn({x,y -> x+y})
+    higerOderfn{x,y -> x+y}
 }
 
 
-fun higerOderfn(fun : (Int, Int) -> Int){
+fun higerOderfn(λ : (Int, Int) -> Int){
 
 }
 
