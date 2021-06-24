@@ -2,9 +2,13 @@
 
 fun main(){
     print("welcome to functional fp")
-    higerOderfn(::sum(1,2))
+
     higerOderfn({x,y -> x+y})
     higerOderfn{x,y -> x+y}
+
+    val numbers = 1..100
+    numbers.filter { it % 5==0 }.map { it *20 }.forEach{println(it)}
+
 }
 
 
