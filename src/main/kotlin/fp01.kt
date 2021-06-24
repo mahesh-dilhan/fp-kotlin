@@ -5,6 +5,7 @@ fun main(){
 }
 
 
+fun sum (x: Int, y: Int) = x+y
 
 fun countPairs(elements: List<String>) : List<Pair<String, Int>> {
     return elements.groupBy {
