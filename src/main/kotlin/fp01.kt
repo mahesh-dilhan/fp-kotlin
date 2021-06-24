@@ -39,7 +39,7 @@ fun countPairs(elements: List<String>) : List<Pair<String, Int>> {
     }.map {  Pair(it.key, it.value.count()) }
 }
 
-open class Results()
+sealed class Results()
 class Success(output: Int): Results()
 class Failure(message: String): Results()
 
