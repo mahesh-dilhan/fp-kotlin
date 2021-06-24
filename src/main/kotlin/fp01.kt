@@ -9,10 +9,15 @@ fun main(){
     val numbers = 1..100
     numbers.filter { it % 5==0 }.map { it *20 }.forEach{println(it)}
 
+    "kotling functional programming".toCamalCase()
 }
 
 
 fun higerOderfn(λ : (Int, Int) -> Int){
+    TODO("implemnted ")
+}
+
+fun String.toCamalCase() {
 
 }
 
