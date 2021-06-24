@@ -1,23 +1,30 @@
 
 
 fun main(){
-    print("welcome to functional fp")
+    println("welcome to functional fp")
+    val x: Int = 10
+    val y: Int = 20
 
-    higerOderfn({x,y -> x+y})
-    higerOderfn{x,y -> x+y}
 
-    val numbers = 1..100
-    numbers.filter { it % 5==0 }.map { it *20 }.forEach{println(it)}
+  println(higerOderfn(2,3,{x,y -> x+y}))
+    println(higerOderfn(5,6){ x,y -> x+y})
+
+   // val numbers = 1..100
+   // numbers.filter { it % 5==0 }.map { it *20 }.forEach{println(it)}
 
     "kotling functional programming".toCamalCase()
 
     "Me" isSameAsMe "Me"
+
+    higerOderfn(4,5,fun(x, y) :Int{
+        return x+y
+    })
 }
 
 infix fun String.isSameAsMe (value: String) = this == value
 
-fun higerOderfn(λ : (Int, Int) -> Int){
-    TODO("implemnted ")
+fun higerOderfn(a:Int, b:Int, λ : (Int, Int) -> Int){
+    println(λ(a,b))
 }
 
 fun String.toCamalCase() {
